@@ -4,11 +4,16 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
+const dotenv = require('dotenv');
 
 const app = express();
 
+//-----Dotenv---------//
+dotenv.config();
+
 //-----DB Config---------//
-const db = require('./config/keys').MongoURI;
+// const db = require('./config/keys').MongoURI;
+const db = process.env.MONGO_URI;
 
 //------Connect to Mongo--------//
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })

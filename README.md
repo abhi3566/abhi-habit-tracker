@@ -26,3 +26,7 @@
 * models - This folder contains schema definition of our mongoose models.
 * routes - This folder contains all the routes for our API.
 * views - This folder contains layout, partials and templates to be displayed to the user.
+
+## Login Credentials
+* email: admin@gmail.com
+* email: abhiuser@gmail.com
